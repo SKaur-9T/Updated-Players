@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intramurals Players</title>
+
+    <!-- BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PYSCRIPT -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+        <span class="navbar-brand fw-bold">Intramurals SY 2025-2026</span>
+        <div class="ms-auto">
+            <a href="https://skaur-9t.github.io/Updated-Skill-Test/" class="btn nav-btn me-2">Create Account</a>
+            <a href="https://skaur-9t.github.io/Updated-Seatwork-2/" class="btn nav-btn me-2">Team Checker</a>
+            <a href="https://skaur-9t.github.io/Updated-Players/" class="btn nav-btn">Players</a>
+        </div>
+    </div>
+</nav>
+
+<!-- PLAYERS LIST -->
+<div class="container text-center mt-5 p-4 bg-white rounded shadow" style="max-width:400px;">
+    <h3>Intramurals Players:</h3>
+    <button py-click="generate_names" class="btn btn-success mt-2">Click here</button>
+    <div id="playersList" class="mt-3 text-start"></div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer text-center">
+    <p>Leona Abeleda & Simrandip Kaur | 10 - Topaz</p>
+</footer>
+
+<!-- PYSCRIPT -->
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
